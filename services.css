@@ -1,0 +1,285 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Akshar', sans-serif;
+}
+
+.wrapper{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(images/ross-parmly-rf6ywHVkrlY-unsplash.jpg);
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.navbar{
+    display: flex;
+    width: 100%;
+    height: 125px;
+    top: 0;
+    background: #181818;
+    position: fixed;
+   
+}
+.navbar img{
+    width: 132px;
+    height: 131px;
+    cursor: pointer;
+}
+.navbar h1{
+    position: relative;
+    top: 75px;
+    left: 0;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 553px;
+    height: 200px;
+    background: linear-gradient(to left, white, grey);
+    border: 2px  solid #181818; 
+    border-radius: 20px;
+}
+
+.info p{
+    color: red;
+}
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+}
+
+.info label{
+    align-self: flex-start;
+    position: relative;
+    left: 160px;
+    margin-bottom: 10px;
+}
+
+.info label::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    width: 20%;
+    background:linear-gradient(to right,#181818, white);
+    border-radius: 5px;
+}
+.info input{
+    font-size: 22px;
+    margin-bottom:10px;
+}
+.info button{
+    font-size: 18px;
+}
+.logreg{
+    position: fixed;
+    right: 0;
+    width: 300px;
+    height: 125px;
+}
+
+.logreg a{
+    position: relative;
+    float: right;
+    font-size: 22px;
+    padding: 7px;
+    margin-right: 8px;
+    top: 60px;
+    text-decoration: none;
+    color:white;
+    transition: 0.5s;
+    font-weight: 400;
+    border: .5px solid white ;
+   
+    
+   
+}
+.logreg a span{
+    position: absolute;
+    background: aliceblue;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    transition: 0.5s;
+    z-index: -1;
+  
+  
+}
+
+
+.logreg a:hover span{
+    width: 100%;
+}
+
+.logreg a:hover{
+    color:#181818;
+}
+@media only screen and (max-width: 991px){
+    body{
+        width: 100%;
+        height: 100vh;
+    }
+    
+    .wrapper{
+        width: 100%;
+        height: 100vh;
+        background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(images/nick-morales-BwYcH78rcpI-unsplash.jpg)
+    }
+    .navbar{
+        display: flex;
+        width: 100%;
+        height: 140px;
+        top: 0;
+        background: #181818;
+        position: fixed;
+       
+    }
+    .navbar img{
+        position: relative;
+        left: 35%;
+        width: 100px;
+        height: 100px;
+        top: 0;
+        cursor: pointer;
+    }
+    .navbar h1{
+        position: relative;
+        top: 90px;
+        left: 23px;
+        color: #ffffff;
+        cursor: pointer;
+    }
+    .options{
+        display: flex;
+        flex-wrap: wrap;
+        position: fixed;
+        height: calc(100vh - 140px);
+        width: 100%;
+        bottom: 0;
+      
+    }
+    .op1{
+        height:252px;
+        width: 100vw;
+        background-image:linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(images/clay-banks-O5hfuVWgsS8-unsplash.png);
+        background-size: 252px 100% ;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        transition: 0.5s;
+    }
+    
+    .op1 p {
+        display: none;
+        position: relative;
+        left: 40%;
+        top: 25%;
+        font-size: 30px;
+        color: white;
+        transition: 0.5s;
+        
+        
+    }
+    .op2{
+        height:252px;
+        width: 100vw;
+        background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)),url(images/jakob-rosen-Emvf_emPMdY-unsplash.jpg);
+        background-size: 252px 100% ;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        transition: 0.5s;
+    }
+    .op2 p {
+        display: none;
+        position: relative;
+        left: 35%;
+        top: 25%;
+        font-size: 30px;
+        color: white;
+        transition: 0.5s;
+    
+    
+        
+    }
+    
+    .op3{
+        height:252px;
+        width: 100vw;
+        background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(images/sacha-verheij-5bwgW8_9OPs-unsplash.jpg);
+        background-size: 252px 100% ;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        transition: 0.5s;
+    }
+    
+    .op3 p {
+        display: none;
+        position: relative;
+        left: 35%;
+        top: 25%;
+        font-size: 30px;
+        color: white; 
+        transition: 0.5s;
+    }
+    .logreg{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width:80px;
+        height: 140px;
+        
+        z-index: 50;
+    }
+    
+    .logreg a{
+        position: absolute;
+        float: right;
+        font-size: 18px;
+        
+        top: 90px;
+        right:0;
+        text-decoration: none;
+        color:white;
+        transition: 0.5s;
+        font-weight: 400;
+        border: .5px solid white ;
+        
+       
+        
+       
+    }
+    
+    .logreg .contact{
+        display: none;
+    }
+    .cr{
+        z-index: 20;
+        color: white;
+       
+    }
+    
+    .copy{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    
+}
